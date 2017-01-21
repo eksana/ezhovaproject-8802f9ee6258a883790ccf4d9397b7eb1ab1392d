@@ -1,0 +1,1 @@
+json.array! @platters, partial: 'platters/platter', as: :platter

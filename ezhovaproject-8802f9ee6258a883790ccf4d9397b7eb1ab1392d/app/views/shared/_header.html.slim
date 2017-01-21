@@ -1,0 +1,13 @@
+nav.navbar.navbar-default
+  .container-fluid
+    .navbar-header
+      a.navbar-brand href="/main/index"
+        b Experteese
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li = link_to 'Главная', main_index_path
+        li = link_to 'Контакты', main_contacts_path
+        li = link_to 'О нас', main_about_path
+        li = link_to 'Помощь', main_help_path
+        li = link_to 'Пользователи', users_path
+        li = link_to 'Войти', signin_path

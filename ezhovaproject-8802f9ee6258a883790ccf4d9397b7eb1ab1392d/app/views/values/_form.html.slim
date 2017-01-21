@@ -1,0 +1,17 @@
+= form_for @value, html: { class: "form-horizontal" } do |f|
+  .form-group
+    = f.label :user_id, class: 'control-label col-md-2'
+    .col-md-10
+      = f.text_field :user_id, class: 'text_field form-control'
+  .form-group
+    = f.label :image_id, class: 'control-label col-md-2'
+    .col-md-10
+      = f.text_field :image_id, class: 'text_field form-control'
+  .form-group
+    = f.label :value, class: 'control-label col-md-2'
+    .col-md-10
+      = f.text_field :value, class: 'text_field form-control'
+  .form-group
+    .col-md-offset-2.col-md-10
+      = f.submit nil, class: 'btn btn-primary'
+      = link_to t('.cancel', default: t("helpers.links.cancel")), values_path, class: 'btn btn-default'

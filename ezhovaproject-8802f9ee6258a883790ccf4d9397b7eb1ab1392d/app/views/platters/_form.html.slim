@@ -1,0 +1,33 @@
+= form_for @platter, html: { class: "form-horizontal" } do |f|
+  .form-group
+    = f.label :name, class: 'control-label col-md-2'
+    .col-md-10
+      = f.text_field :name, class: 'text_field form-control'
+  .form-group
+    = f.label :singer, class: 'control-label col-md-2'
+    .col-md-10
+      = f.text_field :singer, class: 'text_field form-control'
+  .form-group
+    = f.label :year, class: 'control-label col-md-2'
+    .col-md-10
+      = f.text_field :year, class: 'text_field form-control'
+  .form-group
+    = f.label :genre_id, class: 'control-label col-md-2'
+    .col-md-10
+      = f.text_field :genre_id, class: 'text_field form-control'
+  .form-group
+    = f.label :image_id, class: 'control-label col-md-2'
+    .col-md-10
+      = f.text_field :image_id, class: 'text_field form-control'
+  .form-group
+    = f.label :user_id, class: 'control-label col-md-2'
+    .col-md-10
+      = f.text_field :user_id, class: 'text_field form-control'
+  .form-group
+    = f.label :description, class: 'control-label col-md-2'
+    .col-md-10
+      = f.text_field :description, class: 'text_field form-control'
+  .form-group
+    .col-md-offset-2.col-md-10
+      = f.submit nil, class: 'btn btn-primary'
+      = link_to t('.cancel', default: t("helpers.links.cancel")), platters_path, class: 'btn btn-default'
